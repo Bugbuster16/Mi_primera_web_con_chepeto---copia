@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocina Sudamericana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#historias">Historias</a></li>
+                <li><a href="#tecnicas">Técnicas</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Descubre los Sabores de Sudamérica</h1>
+        <p>Explora recetas auténticas, historias detrás de los platos y técnicas de cocina.</p>
+    </section>
+    <section id="recetas">
+        <h2>Recetas Destacadas</h2>
+        <div class="card-container">
+            <!-- Ejemplo de tarjeta de receta con modal -->
+            
+            <!--PALTA-->
+            <div class="card" onclick="openModal('palta')">
+                <img src="img/palta.webp" alt="Palta">
+                <h3>Delicia de Palta</h3>
+            </div>
+            <!-- Repetir estructura para cada plato -->
+            <!-- Modales para las recetas -->
+            <div id="modal-palta" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('palta')">&times;</span>
+                    <h2>Receta de Palta</h2>
+                    <p>Aquí va la receta detallada de la Palta...</p>
+                </div>
+            </div>
+            <!--PALTA-->
+
+            <!--ASADO-->
+            <div class="card" onclick="openModal('asado')">
+                    <img src="img/asado.webp" alt="Asado">
+                    <h3>Asado Tradicional</h3>
+            </div>
+            <div id="modal-asado" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('asado')">&times;</span>
+                    <h2>Receta de Asado</h2>
+                    <p>Aquí va la receta detallada del Asado...</p>
+                </div>
+            </div>
+            <!--ASADO-->
+
+            <!--CHEVICHE-->                
+            <div class="card" onclick="openModal('ceviche')">
+                    <img src="img/cheviche.webp" alt="Ceviche">
+                    <h3>Ceviche Vibrante</h3>
+            </div>
+
+            <div id="modal-ceviche" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('ceviche')">&times;</span>
+                    <h2>Receta de Ceviche</h2>
+                    <p>Aquí va la receta detallada del Ceviche...</p>
+                </div>
+            </div>
+             <!--CHEVICHE-->    
+
+            <!--EMPANADA-->                    
+            <div class="card" onclick="openModal('empanada')">
+                    <img src="img/empanada.webp" alt="Empanada">
+                    <h3>Empanadas Jugosas</h3>
+            </div>
+
+            <div id="modal-empanada" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('empanada')">&times;</span>
+                    <h2>Receta de Empanada</h2>
+                    <p>Aquí va la receta detallada de la Empanada...</p>
+                </div>
+            </div>
+            <!--EMPANADA--> 
+
+            <!--AREPA-->                 
+            <div class="card" onclick="openModal('arepa')">
+                    <img src="img/arepa.webp" alt="Arepa">
+                    <h3>Arepa Versátil</h3>
+                </div>
+            </div>
+
+            <div id="modal-arepa" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('arepa')">&times;</span>
+                    <h2>Receta de Arepa</h2>
+                    <p>Aquí va la receta detallada de la Arepa...</p>
+                </div>
+            </div>
+            <!-- Repetir estructura de modal para cada plato -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Cocina Sudamericana. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
